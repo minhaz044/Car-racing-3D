@@ -1,0 +1,3 @@
+Bouble sort
+Insertion sort
+selection sort

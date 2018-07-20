@@ -1,0 +1,59 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main()
+{
+	int a[10]={1,5,12,6,88,50,52,14,20,89},la[10],lb[10],low,high,mid,x;
+	sort(a,a+10);
+	
+	low=0;
+	high=9;
+	//scanf("%d",&x);
+	x=50;
+	int n,q,i,j;
+	int flag =1;
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&la[i]);
+		
+	}
+	
+	scanf("%d",&q);
+	for(i=0;i<q;i++)
+	{
+		scanf("%d",&lb[i]);
+		
+		
+	}
+
+	while(q>-1)
+	{
+		
+		
+			while(low<=high)
+	{
+	
+		mid=(low+high)/2;
+		if(la[mid]==lb[0])
+		{
+			printf("%d ")
+			j++;
+			break;
+			
+		}
+		
+		else if(la[mid]>x)
+		{
+			high=mid-1;
+		}
+		else
+		{
+			low=mid+1;
+		}
+	}	
+	q--;	
+	}
+
+	return 0;
+}
